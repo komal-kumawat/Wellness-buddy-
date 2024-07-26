@@ -1,0 +1,194 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #5a706cdc;
+    color: #735c5c;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: #fefefe;
+    color: #000000;
+    padding-top: 1em;
+    /* min-height: 8px; */
+    border-bottom: #000000 0.30rem solid;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+}
+.logo{
+    float: left;
+    width: 25%;
+    
+}
+
+header a {
+    color: #0f0f0f;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+
+header ul {
+    padding: 0;
+    list-style: none;
+}
+
+header li {
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header nav {
+    float: right;
+    margin-top: 1rem;
+}
+
+header h1 {
+    float: left;
+    margin-top: 10px;
+
+}
+
+main {
+    padding: 20px 0;
+    
+}
+
+main h2 {
+    color: #fdf3f3;
+    font-size: 220%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+
+.tip{
+    margin-bottom: 2rem;
+    background: #ffffff;
+    padding: 1.25rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 100%;
+    color: #131111;
+
+}
+.img1{
+    float: left;
+    padding: 2%;
+    margin-right: 5%;
+    width: 16%;
+    margin-left: 2%;
+    
+    
+}
+.img2{
+    float: left;
+    width: 16%;
+    padding: 4%;
+    margin-right: 3%;
+   
+    
+}
+.img3{
+    float: left;
+    width: 20%;
+    padding: 3%;
+    margin-right: 2%;
+    
+    
+    
+}
+.img4{
+    float: left;
+    width: 19%;
+    margin-right: 3%;
+    padding: 3%;
+    
+}
+.img5{
+    float: left;
+    margin: 3%;
+    
+    
+}
+
+
+
+footer {
+    background: #030303;
+    color: #fff;
+    text-align: center;
+    padding: 1.25rem 0;
+    margin-top: 1.2rem;
+}
+
+form .question {
+    margin-bottom: 1.2rem;
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+button {
+    background-color: #50b3a2;
+    color: #fff;
+    border: none;
+    padding: 0.8rem 1.2rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e8491d;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 64rem) {
+    .container {
+        width: 100%;
+        padding: 0 1.2rem;
+    }
+    
+    header nav {
+        float: none;
+        text-align: center;
+    }
+    
+    header h1, header ul {
+        float: none;
+        text-align: center;
+    }
+    
+    header li {
+        display: block;
+        padding: 0.8rem 0;
+    }
+}
+
+@media (max-width: 30rem) {
+    header h1 {
+        font-size: 1.4rem;
+    }
+    
+    header a {
+        font-size: 0.9rem;
+    }
+    
+    button {
+        width: 100%;
+        padding: 0.95rem;
+    }
+}
+/* body{
+    background-image: url("https://img.freepik.com/free-vector/clean-medical-background_53876-97927.jpg");
+} */
