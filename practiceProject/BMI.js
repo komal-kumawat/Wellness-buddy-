@@ -87,3 +87,11 @@ function calculateBMI() {
 
     resultElement.innerHTML = `Your BMI is ${bmi.toFixed(1)} (${category})`;
 }
+
+function Refresh() {
+    document.getElementById('gender').value = "";
+    document.getElementById('age').value = "";
+    document.getElementById('height').value = "";
+    document.getElementById('weight').value = "";
+    document.getElementById('result').innerHTML = "";
+}
