@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Good Health and Wellbeing</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="quiz.css">
 </head>
 <body>
     <header>
@@ -12,12 +12,12 @@
             <img class="logo" src="WELLNESS BUDDY LOGO.1.jpg">
             <nav>
                 <ul>
-                    <li><a href="sdg.html">Home</a></li>
+                    <!-- <li><a href="sdg.html">Home</a></li> -->
                     <li><a href="Bmi.html">BMI Calculator</a></li>
-                    <li><a href="tips.html">health tips</a></li>
-                    <li><a href="resource.html">Resources</a></li>
+                    <li><a href="tips.html">Health Tips</a></li>
+                    <li><a href="resource.html">RESOURCES</a></li>
                     <li><a href="about.html">About</a></li>
-                    
+
                 </ul>
             </nav>
         </div>
@@ -62,17 +62,13 @@
                         <label><input type="radio" name="q5" value="2"> Often</label><br>
                         <label><input type="radio" name="q5" value="3"> Always</label>
                     </div>
-                    <button type="button" onclick="calculateScore()">Submit</button>
+                    <button type="button" id="submit-btn" class="btn" onclick="calculateScore()">Submit</button>
+                    <button type="button" class="btn" onclick="refreshQuiz()">Refresh</button>
                 </form>
-                <p id="result"></p>
+                <div id="quiz-result"></div>
             </div>
         </section>
     </main>
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Good Health and Wellbeing. All rights reserved.</p>
-        </div>
-    </footer>
     <script src="script.js"></script>
 </body>
 </html>

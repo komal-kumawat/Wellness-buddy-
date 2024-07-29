@@ -134,7 +134,7 @@ bmi-body{
     justify-content:space-between;
     /* align-items: center; */
     padding:2%;
-    height: 97vh;
+    height: 100%;
     margin:0; 
 }
 .aboutbmi{
@@ -261,4 +261,237 @@ footer {
         width: 100%;
         padding: 0.95rem;
     }
+}
+
+
+
+
+
+
+
+
+
+
+
+.sliderandnews {
+    display: flex;
+    height: 350px;
+    margin-top: 10px;
+    margin-left: 60px;
+    margin-bottom: 10px;
+}
+
+.left {
+    align-items: left;
+    width: 60%;
+    height: 350px;
+}
+
+.right {
+    overflow-y: hidden;
+    width: 40%;
+    text-align: left;
+}
+
+.outerright {
+    width: 100%;
+    text-align: left;
+    animation: moveNews 10s linear infinite;
+}
+
+.innerright {
+    display: flex;
+    width: 90%;
+    margin-left: 0px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.innerright p {
+    overflow: hidden;
+    margin: 0;
+    line-height: 1;
+}
+.innerright:hover {
+    background-color: #f9f9f9;
+}
+.innerright:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease-in-out;
+}
+.innerright .news {
+    width: 70%;
+    margin-left: 10px;
+}
+
+.images {
+    margin-left:5rem;
+    width: 80%;
+    height: 120%;
+    border-radius: 8px;
+}
+
+@keyframes moveNews {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-100%);
+    }
+}
+.right {
+    overflow-y: hidden;
+    width: 40%;
+    text-align: left;
+    font-size: 25px;
+    color:black;
+    padding: 20px; /* Add padding for better visibility */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.innerright:hover {
+    background-color: #f9f9f9;
+    animation-play-state: paused;
+}
+
+.innerright .date {
+    margin: 0;
+    width: 20%;
+    background-color: rgb(53, 53, 212);
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 8px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width: 768px) {
+    .sliderandnews {
+        flex-direction: column;
+        height: auto;
+        margin-left: 20px;
+    }
+
+    .left,
+    .right {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .innerright {
+        width: 100%;
+    }
+}
+
+#hero{
+    padding-top:5rem;
+
+}
+p{
+    font-size: 1.2rem;
+}
+h3{
+    font-size:1.5rem;
+    color:#424242
+}
+
+/* Feature Section */
+#features {
+    padding: 50px 0;
+    border-radius: 10px;
+    margin-top: 20px; /* Adds some space above the section */
+}
+
+#features .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#features h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #291b1b;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#features .feature {
+    background-color: #f7e9e9;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.1rem;
+    color: #131111;
+}
+
+#features .feature:hover {
+    transform: translateY(-5px);
+}
+
+#features .feature h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #007BFF;
+}
+
+#features .feature p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #666;
+}
+
+@media (min-width: 768px) {
+    #features .feature {
+        display: flex;
+        align-items: center;
+    }
+
+    #features .feature h3 {
+        flex: 1;
+        text-align: left;
+        margin-bottom: 0;
+    }
+
+    #features .feature p {
+        flex: 3;
+        text-align: left;
+    }
+}
+
+@media (max-width: 767px) {
+    #features .feature h3 {
+        text-align: center;
+    }
+
+    #features .feature p {
+        text-align: center;
+    }
+}
+
+
+
+.formcontainer {
+    
+    height:100vh;
+    width:100vw;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    gap: 1rem;
+
+}
+#login-form, #registerForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 3rem 5rem;
+    width:20em;
 }
