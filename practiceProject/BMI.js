@@ -95,3 +95,4 @@ function Refresh() {
     document.getElementById('weight').value = "";
     document.getElementById('result').innerHTML = "";
 }
+
