@@ -82,6 +82,7 @@ main h2 {
     color: #131111;
 
 }
+
 .img1{
     float: left;
     padding: 2%;
@@ -494,4 +495,11 @@ h3{
     gap: 1rem;
     padding: 3rem 5rem;
     width:20em;
+}
+.img{
+    width:17rem;
+    height:18rem;
+}
+.img7{
+    height:15rem;
 }
