@@ -6,13 +6,13 @@ document.getElementById('logout-button').addEventListener('click', function (eve
     localStorage.clear();
 
     // Redirect to the home page
-    window.location.href = 'sdg.html';
+    window.location.href = 'index.html';
 });
 
 // Prevent back navigation to the page
 window.addEventListener('pageshow', function (event) {
     if (event.persisted || (window.performance && window.performance.navigation.type === 2)) {
-        window.location.href = 'sdg.html';
+        window.location.href = 'index.html';
     }
 });
 

@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function() {
     setInterval(() => {
         currentSlide = (currentSlide + 1) % slides.length;
         sliderImage.src = slides[currentSlide];
-    }, 6000);
+    }, 3000);
 
     // Mock data for news articles
     const newsData = [
